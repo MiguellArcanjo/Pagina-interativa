@@ -78,16 +78,16 @@
                     <label for="">Preferências da hospedagem</label>
                     <div class="perguntas perguntas2">
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="preferencia[]" id="">
                             <label for="">Piscina</label>
              
-                            <input type="checkbox" name="" id="" class="input-checkbox">
+                            <input type="checkbox" name="preferencia[]" id="" class="input-checkbox">
                             <label for="">Wi-Fi</label>
        
-                            <input type="checkbox" name="" id="" class="input-checkbox">
+                            <input type="checkbox" name="preferencia[]" id="" class="input-checkbox">
                             <label for="">Garagem</label>
                     
-                            <input type="checkbox" name="" id="" class="input-checkbox">
+                            <input type="checkbox" name="preferencia[]" id="" class="input-checkbox">
                             <label for="">Suite</label>
                         </div>
                         
@@ -148,44 +148,71 @@
     </section>
 
 
-    <section>
-        <h3>Explore a Natureza</h3>
-        <p>Viaje conosco e veja o melhor que a natureza tem a oferecer</p>
-
-        <figure>
-            <img src="/img/lencol.jpg" alt="">
-            <figcaption>
-                <h3>Lençois Maranhenses, Brasil</h3>
-                <p>Ida e volta a partir de R$79</p>
-            </figcaption>
-        </figure>
-
-        <figure>
-            <img src="/img/goias.jpg" alt="">
-            <figcaption>
-                <h3>Cachoreira Santa Bárbara, Brasil</h3>
-                <p>Ida e volta por R$139</p>
-            </figcaption>
-        </figure>
+    <section class="anuncio">
+        <div class="container container-anuncio">
+            <h3>Explore a Natureza</h3>
+            <p>Viaje conosco e veja o melhor que a natureza tem a oferecer</p>
+    
+            <div>
+                <figure>
+                    <img src="/img/lencol.jpg" alt="">
+                    <figcaption>
+                        <h3>Lençois Maranhenses, Brasil</h3>
+                        <p>Ida e volta a partir de R$79</p>
+                    </figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="/img/goias.jpg" alt="">
+                    <figcaption>
+                        <h3>Cachoreira Santa Bárbara, Brasil</h3>
+                        <p>Ida e volta por R$139</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        
 
 
 
     </section>
 
     <footer>
-        <div class="rodape-centralizado">
-            <div>
+        <div class="container container-footer">
+            <div class="subDiv">
                 <h2>Contato</h2>
-                <p>Rio de Janeiro. RJ</p>
-                <p>Telefefone: (21) 99999-9999</p>
-                <p>Email: contato@agencia.com.br</p>
+                <div>
+                    <img src="/img/local.png" alt="">
+                    <p>Rio de Janeiro. RJ</p>
+                </div>
+
+                <div>
+                    <img src="/img/telefone.png" alt="">
+                    <p>Telefefone: (21) 99999-9999</p>
+                </div>
+
+                <div>
+                    <img src="/img/email.png" alt="">
+                    <p>Email: contato@agencia.com.br</p>
+                </div>
             </div>
 
-            <div>
+            <div class="subDiv">
                 <h2>Nossas Redes Sociais</h2>
-                <p>/AgenciaDeViagem</p>
-                <p>@AgenciaDeViagem</p>
-                <p>@AgenciaDeViagem</p>
+                <div>
+                    <img src="/img/fb.png" alt="">
+                    <p>/AgenciaDeViagem</p>
+                </div>
+
+                <div>
+                    <img src="/img/ig.png" alt="">
+                    <p>@AgenciaDeViagem</p>
+                </div>
+
+                <div>
+                    <img src="/img/tt.png" alt="">
+                    <p>@AgenciaDeViagem</p>
+                </div>
             </div>
         </div>
     </footer>

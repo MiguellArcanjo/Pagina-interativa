@@ -252,3 +252,96 @@ select {
     height: 150px;
     width: 250px;
 }
+
+.anuncio {
+    margin-top: 60px;
+}
+
+.container-anuncio {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-anuncio h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 4%;
+}
+
+.container-anuncio p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 4%;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
+    height: 300px;
+    width: 400px;
+}
+
+.container-anuncio div {
+    display: flex;
+}
+
+figcaption {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+}
+
+figcaption h3 {
+    font-size: 16px;
+}
+
+figcaption p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: gray;
+}
+
+footer {
+    margin-top: 32px;
+    background-color: #5d15d1;
+}
+
+.container-footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.subDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.subDiv h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.subDiv div img {
+    width: 18px;
+    height: 18px;
+}
+
+.subDiv div {
+    align-items: center;
+    display: flex;
+}
+
+.subDiv div p {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 10px;
+}
