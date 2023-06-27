@@ -4,111 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência de viagens</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
 </head>
 <body>
     <header class="topo">
-        <div class="topo-centralizado">
+        <div class="topo-centralizado container">
             <img src="/img/local-logo.png" alt="">
             <h2>Agência de Viagens</h2>
         </div>
     </header>
 
-    <form action="">
-        <div>
+    <form method="post" action="">
+        <div class="container container-form">
             <div class="topo-form">
                 <img src="/img/aviao.png" alt="">
                 <h2>Solicite um orçamento</h2>
             </div>
 
+                <div class="corpo-form">
 
-            <label for="">Nome</label>
-            <input type="text" placeholder="Nome completo" required>
-            <br>
-            <label for="">Email</label>
-            <input type="email" placeholder="Email para contato" required>
-            <br>
-            <label for="">Celular</label>
-            <input type="tel" name="" id="" placeholder="(XX) XXXXX-XXXX">
+                    <h1>Informe seus dados</h1>
 
-            <div>
-                <label for="">Data da ida</label>
-                <input type="date" name="" id="">
+                    <label for="">Nome</label>
+                    <input type="text" name="nome" placeholder="Nome completo" required>
+                    <br>
+                    <label for="">Email</label>
+                    <input type="email" name="email" placeholder="Email para contato" required>
+                    <br>
+                    <label for="">Celular</label>
+                    <input type="tel" name="Telefone" id="" placeholder="(XX) XXXXX-XXXX">
+        
+                    <div class="datas">
+                        <div>
+                            <label for="">Data da ida</label>
+                            <input type="date" name="dataIda" id="">
+                        </div>
+        
+                        <div>
+                            <label for="">Data da volta</label>
+                            <input type="date" name="DataVolta" id="">
+                        </div>
+                    </div>
+        
+                    <div class="destino">
+                        <div>
+                            <label for="">Origem</label>
+                            <select name="" id="">
+                                <option value="">Partide de</option>
+                            </select>
+                        </div>
+        
+                        <div>
+                            <label for="">Destino</label>
+                            <select name="" id="">
+                                <option value="">Indo para</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <label for="" class="label-radio">Quarto com cama infantil?</label>
+                    <div class="perguntas">
+                        <div>
+                            <input type="radio" name="check-quarto" id="infantil">
+                            <label for="infantil">Sim</label>
 
-                <label for="">Data da volta</label>
-                <input type="date" name="" id="">
-            </div>
+                            <input type="radio" name="check-quarto" id="infantil" class="inputRadio2">
+                            <label for="infantil">Não</label>
+                        </div>
 
-            <div>
-                <label for="">Origem</label>
-                <select name="" id="">
-                    <option value="">Partide de</option>
-                </select>
+                    </div>
+        
+                    <label for="">Preferências da hospedagem</label>
+                    <div class="perguntas perguntas2">
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Piscina</label>
+             
+                            <input type="checkbox" name="" id="" class="input-checkbox">
+                            <label for="">Wi-Fi</label>
+       
+                            <input type="checkbox" name="" id="" class="input-checkbox">
+                            <label for="">Garagem</label>
+                    
+                            <input type="checkbox" name="" id="" class="input-checkbox">
+                            <label for="">Suite</label>
+                        </div>
+                        
 
-                <label for="">Destino</label>
-                <select name="" id="">
-                    <option value="">Indo para</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="">Quarto com cama infantil?</label>
-                <input type="radio" name="check-quarto" id="infantil">
-                <label for="infantil">Sim</label>
-                <input type="radio" name="check-quarto" id="infantil">
-                <label for="infantil">Não</label>
-            </div>
-
-            <div>
-                <label for="">Preferências da hospedagem</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Piscina</label>
-
-                <input type="checkbox" name="" id="">
-                <label for="">Wi-Fi</label>
-
-                <input type="checkbox" name="" id="">
-                <label for="">Garagem</label>
-
-                <input type="checkbox" name="" id="">
-                <label for="">Suite</label>
+                    </div>
+                    <button type="submit">Solicitar orçamento</button>
             </div>
             
-            <button type="submit">Solicitar orçamento</button>
+            
         </div>
     </form>
 
-    <section>
-        <h1>Ofertas</h1>
-        <p>Com ate <span>50%</span> de desconto.</p>
+    <section class="ofertas">
+        <div class="container container-ofertas">
+            <h1>Ofertas</h1>
+            <p>Com ate <span>50%</span> de desconto.</p>
+            
+            <div class="imgsOfertas">
+                <div class="imagemIsolada">
+                    <img src="/img/rio.jpg" alt="">
+                    <div><h3>Rio de Janeiro</h3></div>
+                    
+                </div>
         
-        <div>
-            <img src="/img/rio.jpg" alt="">
-            <h3>Rio de Janeiro</h3>
-        </div>
 
-        <div>
-            <div>
-                <img src="/img/manaus.jpg" alt="">
-                <h3>Manaus</h3>
-            </div>
-
-            <div>
-                <img src="/img/niteroi.jpg" alt="">
-                <h3>São Paulo</h3>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <img src="/img/saopaulo.jpg" alt="">
-                <h3>Rio de Janeiro</h3>
+                <div class="imgDir">
+                    <div class="grupoCima">
+                        <div>
+                            <img src="/img/manaus.jpg" alt="" class="fotoDir">
+                            <div>
+                                <h3>Manaus</h3>
+                            </div>
+                        </div>
+            
+                        <div>
+                            <img src="/img/niteroi.jpg" alt="" class="fotoDir">
+                            <h3>São Paulo</h3>
+                        </div>
+                    </div>
+            
+                    <div class="grupoBaixo">
+                        <div>
+                            <img src="/img/saopaulo.jpg" alt="" class="fotoDir">
+                            <h3>Rio de Janeiro</h3>
+                        </div>
+                        
+                        <div>
+                            <img src="/img/maranhao.jpg" alt="" class="fotoDir">
+                            <h3>Maranhão</h3>
+                        </div>
+                    </div>
+                </div>
+               
             </div>
             
-            <div>
-                <img src="/img/maranhao.jpg" alt="">
-                <h3>Maranhão</h3>
-            </div>
         </div>
+        
     </section>
 
 
@@ -135,5 +171,23 @@
 
 
     </section>
+
+    <footer>
+        <div class="rodape-centralizado">
+            <div>
+                <h2>Contato</h2>
+                <p>Rio de Janeiro. RJ</p>
+                <p>Telefefone: (21) 99999-9999</p>
+                <p>Email: contato@agencia.com.br</p>
+            </div>
+
+            <div>
+                <h2>Nossas Redes Sociais</h2>
+                <p>/AgenciaDeViagem</p>
+                <p>@AgenciaDeViagem</p>
+                <p>@AgenciaDeViagem</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
